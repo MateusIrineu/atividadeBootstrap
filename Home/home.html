@@ -13,6 +13,9 @@
 
 </head>
 <body style="background-color: rgb(194, 194, 194)";>
+
+  <!-- CARROSSEL -->
+
 <div
       id="carousel"
       class=" mt-5 mx-5 carousel slide"
@@ -66,9 +69,11 @@
 
     </div>
 
-    <div class="container d-flex justify-content-center row-12 col-md-6 col-lg-12">
+    <!-- CARDS -->
 
-<div class="card p-5 display-5 text-center shadow" style="width: 18rem; height: 27rem; background-color: rgba(236, 236, 236, 0.479); font-size: 25px;">
+    <div class="container d-flex justify-content-center row col-md-6 col-lg-12" style="margin: auto;">
+
+<div class="card p-5 display-5 text-center shadow mb-4" style="width: 18rem; height: 27rem; background-color: rgba(236, 236, 236, 0.479); font-size: 25px;">
   <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/detail/004.png" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title" style="color: rgb(131, 130, 130)">N° 0004</h5>
@@ -77,7 +82,7 @@
   </div>
 </div>
 
-<div class="card p-5 display-5 mx-5 text-center shadow" style="width: 18rem; height: 27rem; background-color: rgba(236, 236, 236, 0.479); font-size: 26px;">
+<div class="card p-5 display-5 mx-5 text-center shadow mb-4" style="width: 18rem; height: 27rem; background-color: rgba(236, 236, 236, 0.479); font-size: 26px;">
   <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/detail/005.png" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title" style="color: rgb(131, 130, 130)">N° 0005</h5>
@@ -86,7 +91,7 @@
   </div>
 </div>
 
-<div class="card p-5 display-5 text-center shadow" style="width: 18rem; height: 27rem; background-color: rgba(236, 236, 236, 0.479); font-size: 27px;">
+<div class="card p-5 display-5 text-center shadow mb-4" style="width: 18rem; height: 27rem; background-color: rgba(236, 236, 236, 0.479); font-size: 27px;">
   <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/detail/006.png" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title" style="color: rgb(131, 130, 130)">N° 0005</h5>
@@ -100,7 +105,88 @@
 
     </div>
 
+  <!-- FOOTER  -->
 
+   <footer class="bg-danger text-white pt-4 pb-4 mt-5" role="contentinfo">
+    <div class="container d-flex flex-column justify-content-center align-items-center">
+        <!-- Formulário -->
+        <div class="mb-4" style="max-width: 600px;">
+            <h5>Inscreva-se para receber os e-mails da Pokémon!</h5>
+            <form class="row g-2">
+                <!-- E-mail -->
+                <div class="col-12">
+                    <input type="email" class="form-control" placeholder="E-mail" required>
+                </div>
+                <!-- Nacionalidade e Data de nascimento -->
+                <div class="col-6">
+                    <select class="form-select" required>
+                        <option selected>Brasil</option>
+                        <option>Estados Unidos</option>
+                        <option>Portugal</option>
+                        <option>Outro</option>
+                    </select>
+                </div>
+                <div class="col-6">
+                    <input type="date" class="form-control" required>
+                </div>
 
+                <!-- Botão -->
+                <div class="col-12 d-grid">
+                    <button type="submit" class="btn btn-dark">Crie sua conta</button>
+                </div>
+
+                <!-- Checkboxes -->
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="checkbox1">
+                        <label class="form-check-label" for="checkbox1">
+                            Jogos de videogame Pokémon, aplicativos e muito mais
+                        </label>
+                    </div>
+                    <div class="form-check mb-2">
+                        <input class="form-check-input" type="checkbox" id="checkbox2" required>
+                        <label class="form-check-label" for="checkbox2">
+                            Eu aceito os <a href="#" class="text-white text-decoration-underline">Termos de Uso</a> e o
+                            <a href="#" class="text-white text-decoration-underline">Aviso de Privacidade</a> do site da Pokémon
+                        </label>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="d-flex flex-wrap justify-content-center align-items-start gap-4 text-white" style="font-size: 0.85rem;">
+        <!-- The Pokémon Company -->
+        <div>
+            <h6 class="fw-bold">The Pokémon Company</h6>
+            <ul class="list-unstyled">
+                <li><a href="#" class="text-white text-decoration-none">Guia para pais ou responsáveis</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Atendimento ao Consumidor</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Sobre a nossa empresa</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Escolha um país/região</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Site de imprensa</a></li>
+            </ul>
+        </div>
+
+        <!-- Redes Sociais -->
+        <div class="d-flex flex-column align-items-center">
+            <div class="mb-2">
+                <a href="#" class="text-white fs-4 me-3"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="text-white fs-4 me-3"><i class="bi bi-youtube"></i></a>
+                <a href="#" class="text-white fs-4 me-3"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="text-white fs-4"><i class="bi bi-instagram"></i></a>
+            </div>
+        </div>
+
+        <!-- Informações Legais -->
+        <div>
+            <img src="https://assets.pokemon.com/static2/_ui/img/footer/thepokemoncompanyinternational-seal-1596150491.png" alt="Safe Harbor" width="110" class="mb-2">
+            <p class="small mb-0">
+                Termos de Uso | Aviso de Privacidade<br>
+                | Página de Cookies Informações legais <br>
+                &copy;2025 Pokémon. ©1995–2025 Nintendo/<br>Creatures Inc./GAME FREAK inc. TM, &reg; <br>Nintendo.
+            </p>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
