@@ -25,11 +25,52 @@
 </head>
 <body style="background-color: rgb(194, 194, 194)";>
 
+<nav class="navbar navbar-expand-lg fixed-top bg-danger text-light">
+  <div class="container-fluid d-flex justify-content-between align-items-center position-relative">
+
+    <!-- Logo à esquerda -->
+    <a class="navbar-brand rounded-3 text-danger" href="#">
+      <img src="Trabalho Bootstrap (1).png" alt="">
+    </a>
+
+    <!-- Barra de pesquisa centralizada -->
+    <div class="position-absolute top-50 start-50 translate-middle">
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Digite sua pesquisa" aria-label="Search">
+        <button class="btn btn-danger text-light" type="submit">
+          <i class="bi bi-search"></i>
+        </button>
+      </form>
+    </div>
+
+    <!-- Botão hamburguer -->
+    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Links colapsáveis à direita -->
+    <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link btn btn-danger text-light me-2" href="#">Inicio</a>
+        <a class="nav-link btn btn-danger text-light me-2" href="#">Sobre</a>
+        <a class="nav-link btn btn-danger text-light" href="#">Contato</a>
+      </div>
+    </div>
+
+  </div>
+</nav>
+``
+
+
+
+
+
   <!-- CARROSSEL -->
 
 <div
       id="carousel"
-      class=" mt-5 mx-5 carousel slide"
+      class=" mt-5 mx-auto carousel w-50"
       data-bs-ride="carousel"
       data-bs-interval="3000"
       data-bs-pause="false"
