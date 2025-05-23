@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js
+    " defer></script>
+
+    <title>Sobre</title>
+
+    <style>
+  .hover-card {
+    transition: transform 0.3s; box-shadow: 0.3s;
+  }
+
+  .hover-card:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 10px 20px rgba(255, 0, 0, 0.5)
+  }
+</style>
+
+</head>
+<body class="bg-light">
+
+<nav class="navbar navbar-expand-lg bg-danger text-light">
+  <div class="container-fluid d-flex justify-content-between align-items-center position-relative">
+
+    <!-- Logo à esquerda -->
+    <a class="navbar-brand rounded-3 text-danger" href="#">
+      <img src="Trabalho Bootstrap (1).png" alt="">
+    </a>
+
+    <!-- Barra de pesquisa centralizada -->
+    <div class="position-absolute top-50 start-50 translate-middle">
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Digite sua pesquisa" aria-label="Search">
+        <button class="btn btn-danger text-light" type="submit">
+          <i class="bi bi-search"></i>
+        </button>
+      </form>
+    </div>
+
+    <!-- Botão hamburguer -->
+    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Links colapsáveis à direita -->
+    <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link btn btn-danger text-light me-2" href="home.html">Inicio</a>
+        <a class="nav-link btn btn-danger text-light me-2" href="#">Sobre</a>
+        <a class="nav-link btn btn-danger text-light" href="contato.html">Contato</a>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+<!-- SOBRE -->
+
+  <main class="container display-5" style="font-size: 25px; margin-top: 5%; margin-bottom: 5%;">
+    <section>
+      <h2 class="mb-4">Sobre Nós</h2>
+      <p>
+        Bem-vindo ao Pokebox! Somos uma equipe dedicada ao universo de Pokemon.
+        Nosso objetivo é entregar conteúdo e ferramentas acessíveis, modernas e otimizadas para todos jogos e artigos relacionados ao Pokemon.
+      </p>
+
+      <p>
+        Fundado em 2025, o Pokebox nasceu da vontade de ajudar pessoas a se conectarem por meio da diversão.
+        Trabalhamos com foco em acessibilidade, performance e design responsivo.
+      </p>
+
+      <p>
+        Agradecemos por visitar nosso site! Caso queira entrar em contato conosco, vá até a <a class="text-danger" href="contato.html">página de Contato</a>.
+      </p>
+    </section>
+  </main>
+
+
+ 
+  <!-- FOOTER  -->
+
+<!-- Alert -->
+<div class="alert alert-success alert-dismissible fade show m-3 d-none" role="alert" id="alertSuccess">
+    Cadastro realizado com sucesso! 
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+
+<footer class="bg-danger text-white pt-4 pb-4 display-5" style="font-size: 18px;" role="contentinfo">
+    <div class="container d-flex flex-column justify-content-center align-items-center">
+        <!-- Formulário -->
+        <div class="mb-4" style="max-width: 600px;">
+            <h5>Cadastre-se para fazer parte da comunidade da Pokebox!</h5>
+            <form class="row g-2" id="formInscricao">
+                <!-- E-mail -->
+                <div class="col-12">
+                    <input type="email" class="form-control" placeholder="E-mail" required>
+                </div>
+                <!-- Nacionalidade e Data de nascimento -->
+                <div class="col-6">
+                    <select class="form-select" required>
+                        <option selected>Brasil</option>
+                        <option>Estados Unidos</option>
+                        <option>Portugal</option>
+                        <option>Outro</option>
+                    </select>
+                </div>
+                <div class="col-6">
+                    <input type="date" class="form-control" required>
+                </div>
+
+                <!-- Botão -->
+                <div class="col-12 d-grid">
+                    <button type="submit" class="btn btn-dark">Crie sua conta</button>
+                </div>
+
+                <!-- Checkboxes -->
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="checkbox1">
+                        <label class="form-check-label" for="checkbox1">
+                            Jogos de videogame Pokémon, aplicativos e muito mais
+                        </label>
+                    </div>
+                    <div class="form-check mb-2">
+                        <input class="form-check-input" type="checkbox" id="checkbox2" required>
+                        <label class="form-check-label" for="checkbox2">
+                            Eu aceito os <a href="#" class="text-white text-decoration-underline">Termos de Uso</a> e o
+                            <a href="#" class="text-white text-decoration-underline">Aviso de Privacidade</a> do site da Pokebox
+                        </label>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Informações adicionais do footer -->
+    <div class="d-flex flex-wrap justify-content-center align-items-start gap-4 text-white" style="font-size: 0.85rem;">
+        <!-- The Pokémon Company -->
+        <div>
+            <h6 class="fw-bold">The Pokebox Company</h6>
+            <ul class="list-unstyled">
+                <li><a href="#" class="text-white text-decoration-none">Guia para pais ou responsáveis</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Atendimento ao Consumidor</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Sobre a nossa empresa</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Escolha um país/região</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Site de imprensa</a></li>
+            </ul>
+        </div>
+
+        <!-- Redes Sociais -->
+        <div class="d-flex flex-column align-items-center">
+            <div class="mb-2">
+                <a href="#" class="text-white fs-4 me-3"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="text-white fs-4 me-3"><i class="bi bi-youtube"></i></a>
+                <a href="#" class="text-white fs-4 me-3"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="text-white fs-4"><i class="bi bi-instagram"></i></a>
+            </div>
+        </div>
+
+        <!-- Informações Legais -->
+        <div>
+            <img src="https://assets.pokemon.com/static2/_ui/img/footer/thepokemoncompanyinternational-seal-1596150491.png" alt="Safe Harbor" width="110" class="mb-2">
+            <p class="small mb-0">
+                Termos de Uso | Aviso de Privacidade<br>
+                | Página de Cookies | Informações legais <br>
+                &copy;2025 Pokémon. ©1995–2025 Nintendo/<br>Creatures Inc./GAME FREAK inc. TM, &reg; <br>Nintendo.
+            </p>
+        </div>
+    </div>
+</footer>
+
+<!-- Script para o alert -->
+<script>
+    const form = document.getElementById('formInscricao');
+    const alertSuccess = document.getElementById('alertSuccess');
+
+    form.addEventListener('submit', function(event) {
+        event.preventDefault(); // Evita o envio real do formulário
+        alertSuccess.classList.remove('d-none');
+        form.reset();
+    });
+</script>
+</body>
+</html>

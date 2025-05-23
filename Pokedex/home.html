@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css">
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js
@@ -15,15 +15,46 @@
   .hover-card {
     transition: transform 0.3s; box-shadow: 0.3s;
   }
+  .hover-card-verde {
+    transition: transform 0.3s; box-shadow: 0.3s;
+  }
+  .hover-card-azul {
+    transition: transform 0.3s; box-shadow: 0.3s;
+  }
 
   .hover-card:hover {
     transform: translateY(-5px) scale(1.03);
     box-shadow: 0 10px 20px rgba(255, 0, 0, 0.5)
   }
+  .hover-card-verde:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 10px 20px rgba(24, 228, 75, 0.747)
+  }
+  .hover-card-azul:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 10px 20px rgba(0, 155, 245, 0.959)
+  }
+  
+
+  .btn-venenoso {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #B97FC9;
+  --bs-btn-border-color: #B97FC9;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #a06cb2;
+  --bs-btn-hover-border-color: #a06cb2;
+  --bs-btn-focus-shadow-rgb: 185, 127, 201;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #9359a3;
+  --bs-btn-active-border-color: #9359a3;
+  --bs-btn-disabled-bg: #B97FC9;
+  --bs-btn-disabled-border-color: #B97FC9;
+}
+  
 </style>
 
 </head>
-<body style="background-color: rgb(194, 194, 194)";>
+<body class="bg-light">
 
 <nav class="navbar navbar-expand-lg fixed-top bg-danger text-light">
   <div class="container-fluid d-flex justify-content-between align-items-center position-relative">
@@ -53,24 +84,20 @@
     <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <a class="nav-link btn btn-danger text-light me-2" href="#">Inicio</a>
-        <a class="nav-link btn btn-danger text-light me-2" href="#">Sobre</a>
-        <a class="nav-link btn btn-danger text-light" href="#">Contato</a>
+        <a class="nav-link btn btn-danger text-light me-2" href="sobre.html">Sobre</a>
+        <a class="nav-link btn btn-danger text-light" href="contato.html">Contato</a>
       </div>
     </div>
 
   </div>
 </nav>
-``
-
-
-
-
 
   <!-- CARROSSEL -->
 
 <div
       id="carousel"
-      class=" mt-5 mx-auto carousel w-50"
+      class="mx-auto carousel w-50"
+      style="margin-top: 5%;"
       data-bs-ride="carousel"
       data-bs-interval="3000"
       data-bs-pause="false"
@@ -128,7 +155,7 @@
 <div class="card hover-card p-5 display-5 text-center mb-4" style="width: 18rem; height: 27rem; background-color: rgba(236, 236, 236, 0.479); font-size: 25px;">
   <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/detail/004.png" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title" style="color: rgb(131, 130, 130)">N° 0004</h5>
+    <h5 class="card-title" style="color: rgb(131, 130, 130)">N° 0001</h5>
     <p class="card-text" style="color: rgb(131, 130, 130)">Charmander</p>
     <a href="#" class="btn btn-danger col-10">Fogo</a>
   </div>
@@ -137,7 +164,7 @@
 <div class="card hover-card p-5 display-5 mx-5 text-center mb-4" style="width: 18rem; height: 27rem; background-color: rgba(236, 236, 236, 0.479); font-size: 26px;">
   <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/detail/005.png" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title" style="color: rgb(131, 130, 130)">N° 0005</h5>
+    <h5 class="card-title" style="color: rgb(131, 130, 130)">N° 0002</h5>
     <p class="card-text" style="color: rgb(131, 130, 130)">Charmeleon</p>
     <a href="#" class="btn btn-danger col-10">Fogo</a>
   </div>
@@ -146,7 +173,7 @@
 <div class="card hover-card p-5 display-5 text-center mb-4" style="width: 18rem; height: 27rem; background-color: rgba(236, 236, 236, 0.479); font-size: 27px;">
   <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/detail/006.png" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title" style="color: rgb(131, 130, 130)">N° 0005</h5>
+    <h5 class="card-title" style="color: rgb(131, 130, 130)">N° 0003</h5>
     <p class="card-text" style="color: rgb(131, 130, 130)">Charizard</p>
     <div class="container d-flex justify-content-center">
     <a href="#" class="btn btn-danger col-10 mx-2">Fogo</a>
@@ -155,16 +182,96 @@
   </div>
 </div>
 
+<hr>
+
+<div class="card hover-card-verde p-5 display-5 text-center mb-4" style="width: 18rem; height: 27rem; background-color: rgba(236, 236, 236, 0.479); font-size: 25px;">
+  <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/001.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title" style="color: rgb(131, 130, 130)">N° 0004</h5>
+    <p class="card-text" style="color: rgb(131, 130, 130)">Bulbasaur</p>
+  <div class="container d-flex justify-content-center">
+    <a href="#" class="btn btn-success col-10 mx-2">Planta</a>
+    <a href="#" class="btn btn-venenoso col-10">Venenoso</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="card hover-card-verde p-5 display-5 mx-5 text-center mb-4" style="width: 18rem; height: 27rem; background-color: rgba(236, 236, 236, 0.479); font-size: 26px;">
+  <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/002.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title" style="color: rgb(131, 130, 130)">N° 0005</h5>
+    <p class="card-text" style="color: rgb(131, 130, 130)">Ivysaur</p>
+  <div class="container d-flex justify-content-center">
+    <a href="#" class="btn btn-success col-10 mx-2">Planta</a>
+    <a href="#" class="btn btn-venenoso col-10">Venenoso</a>
+    </div>
+  </div>
+</div>
+
+<div class="card hover-card-verde p-5 display-5 text-center mb-4" style="width: 18rem; height: 27rem; background-color: rgba(236, 236, 236, 0.479); font-size: 27px;">
+  <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/003.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title" style="color: rgb(131, 130, 130)">N° 0006</h5>
+    <p class="card-text" style="color: rgb(131, 130, 130)">Venusaur</p>
+    <div class="container d-flex justify-content-center">
+    <a href="#" class="btn btn-success col-10 mx-2">Planta</a>
+    <a href="#" class="btn btn-venenoso col-10">Venenoso</a>
+    </div>
+  </div>
+</div>
+ 
+<hr>
+
+<div class="card hover-card-azul p-5 display-5 text-center mb-4" style="width: 18rem; height: 27rem; background-color: rgba(236, 236, 236, 0.479); font-size: 25px;">
+  <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/007.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title" style="color: rgb(131, 130, 130)">N° 0007</h5>
+    <p class="card-text" style="color: rgb(131, 130, 130)">Squirtle</p>
+  <div class="container d-flex justify-content-center">
+    <a href="#" class="btn btn-info col-10">Água</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="card hover-card-azul p-5 display-5 mx-5 text-center mb-4" style="width: 18rem; height: 27rem; background-color: rgba(236, 236, 236, 0.479); font-size: 26px;">
+  <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/008.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title" style="color: rgb(131, 130, 130)">N° 0008</h5>
+    <p class="card-text" style="color: rgb(131, 130, 130)">Wartortle</p>
+  <div class="container d-flex justify-content-center">
+   <a href="#" class="btn btn-info col-10">Água</a>
+    </div>
+  </div>
+</div>
+
+<div class="card hover-card-azul p-5 display-5 text-center mb-4" style="width: 18rem; height: 27rem; background-color: rgba(236, 236, 236, 0.479); font-size: 27px;">
+  <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/009.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title" style="color: rgb(131, 130, 130)">N° 0009</h5>
+    <p class="card-text" style="color: rgb(131, 130, 130)">Blastoise</p>
+    <div class="container d-flex justify-content-center">
+  <a href="#" class="btn btn-info col-10">Água</a>
+    </div>
+  </div>
+</div>
     </div>
 
   <!-- FOOTER  -->
 
-   <footer class="bg-danger text-white pt-4 pb-4 mt-5" role="contentinfo">
+<!-- Alert -->
+<div class="alert alert-success alert-dismissible fade show m-3 d-none" role="alert" id="alertSuccess">
+    Cadastro realizado com sucesso! 
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+
+<footer class="bg-danger text-white pt-4 pb-4 display-5" style="font-size: 18px;" role="contentinfo">
     <div class="container d-flex flex-column justify-content-center align-items-center">
         <!-- Formulário -->
         <div class="mb-4" style="max-width: 600px;">
-            <h5>Inscreva-se para receber os e-mails da Pokémon!</h5>
-            <form class="row g-2">
+            <h5>Cadastre-se para fazer parte da comunidade da Pokebox!</h5>
+            <form class="row g-2" id="formInscricao">
                 <!-- E-mail -->
                 <div class="col-12">
                     <input type="email" class="form-control" placeholder="E-mail" required>
@@ -199,17 +306,19 @@
                         <input class="form-check-input" type="checkbox" id="checkbox2" required>
                         <label class="form-check-label" for="checkbox2">
                             Eu aceito os <a href="#" class="text-white text-decoration-underline">Termos de Uso</a> e o
-                            <a href="#" class="text-white text-decoration-underline">Aviso de Privacidade</a> do site da Pokémon
+                            <a href="#" class="text-white text-decoration-underline">Aviso de Privacidade</a> do site da Pokebox
                         </label>
                     </div>
                 </div>
             </form>
         </div>
     </div>
+
+    <!-- Informações adicionais do footer -->
     <div class="d-flex flex-wrap justify-content-center align-items-start gap-4 text-white" style="font-size: 0.85rem;">
         <!-- The Pokémon Company -->
         <div>
-            <h6 class="fw-bold">The Pokémon Company</h6>
+            <h6 class="fw-bold">The Pokebox Company</h6>
             <ul class="list-unstyled">
                 <li><a href="#" class="text-white text-decoration-none">Guia para pais ou responsáveis</a></li>
                 <li><a href="#" class="text-white text-decoration-none">Atendimento ao Consumidor</a></li>
@@ -234,11 +343,23 @@
             <img src="https://assets.pokemon.com/static2/_ui/img/footer/thepokemoncompanyinternational-seal-1596150491.png" alt="Safe Harbor" width="110" class="mb-2">
             <p class="small mb-0">
                 Termos de Uso | Aviso de Privacidade<br>
-                | Página de Cookies Informações legais <br>
+                | Página de Cookies | Informações legais <br>
                 &copy;2025 Pokémon. ©1995–2025 Nintendo/<br>Creatures Inc./GAME FREAK inc. TM, &reg; <br>Nintendo.
             </p>
         </div>
     </div>
 </footer>
+
+<!-- Script para o alert -->
+<script>
+    const form = document.getElementById('formInscricao');
+    const alertSuccess = document.getElementById('alertSuccess');
+
+    form.addEventListener('submit', function(event) {
+        event.preventDefault(); // Evita o envio real do formulário
+        alertSuccess.classList.remove('d-none');
+        form.reset();
+    });
+</script>
 </body>
 </html>
